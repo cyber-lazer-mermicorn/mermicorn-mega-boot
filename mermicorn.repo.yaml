@@ -1,0 +1,32 @@
+schema_version: "1.0"
+
+id: mermicorn-mega-boot
+display_name: Mermicorn Mega Boot
+owner: cherry
+lane: core
+visibility: public
+status: foundation
+
+purpose:
+  problem: Ensure every Mermicorn project starts compliant, consistent, and ready for real work.
+  audience:
+    - Cherry
+    - operators building inside the Grove
+
+shared_services:
+  boot: mermicorn-mega-boot
+  memory: mermicorn-memory
+  token_efficiency: mermicorn-token-saver
+  graphics: mermicorn-graphic-ai
+  commerce: mermicorn-commerce-ai
+
+privacy:
+  public:
+    - templates
+    - scripts
+    - schemas
+  private: []
+
+first_proof:
+  artifact: one-command-scaffold
+  status: planned
