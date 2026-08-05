@@ -17,7 +17,6 @@ def scaffold(
     visibility: str = "public",
     purpose_problem: str,
     first_proof: str,
-    with_mit: bool = False,
 ) -> list[Path]:
     """Create a full compliant project. Returns list of written paths."""
     target = target.resolve()
@@ -39,14 +38,13 @@ def scaffold(
         "goals.md": templates.goals(first_proof),
         "quality.md": templates.quality(),
         "strategy.md": templates.strategy(),
+        "RIGHTS.md": templates.rights(),
+        "LICENSE": templates.proprietary_license(),
         "mermicorn.repo.yaml": templates.repo_yaml(
             repo_id, display_name, lane, visibility, purpose_problem, first_proof
         ),
         ".gitignore": templates.gitignore(),
     }
-
-    if with_mit:
-        files["LICENSE"] = templates.license_mit()
 
     for name, content in files.items():
         path = target / name
@@ -60,14 +58,10 @@ def scaffold(
         keep.write_text("", encoding="utf-8")
         written.append(keep)
 
-    # Minimal GitHub workflow stub
     workflows = target / ".github" / "workflows"
     workflows.mkdir(parents=True, exist_ok=True)
     wf = workflows / "mermicorn-validate.yml"
-    wf.write_text(
-        _validate_workflow(),
-        encoding="utf-8",
-    )
+    wf.write_text(_validate_workflow(), encoding="utf-8")
     written.append(wf)
 
     issue_dir = target / ".github" / "ISSUE_TEMPLATE"

@@ -4,8 +4,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pytest
-
 from mermicorn_boot.scaffold import scaffold
 from mermicorn_boot.validate import validate
 
@@ -20,11 +18,12 @@ def test_scaffold_produces_valid_project(tmp_path: Path) -> None:
         visibility="public",
         purpose_problem="Demonstrate a working mega-boot scaffold end to end.",
         first_proof="demo-scaffold-proof",
-        with_mit=True,
     )
     assert target.is_dir()
     assert (target / "mermicorn.repo.yaml").is_file()
     assert (target / "LICENSE").is_file()
+    assert (target / "RIGHTS.md").is_file()
+    assert "PROPRIETARY" in (target / "LICENSE").read_text(encoding="utf-8")
     assert (target / ".github" / "workflows" / "mermicorn-validate.yml").is_file()
     assert len(written) > 15
 

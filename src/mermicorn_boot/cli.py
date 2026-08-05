@@ -25,7 +25,6 @@ def main() -> None:
 @click.option("--purpose", required=True, help="One-sentence problem statement.")
 @click.option("--first-proof", required=True, help="First proof artifact identifier.")
 @click.option("--path", "base_path", type=click.Path(), default=".", help="Parent directory.")
-@click.option("--mit", is_flag=True, help="Include MIT LICENSE (for reusable software).")
 def create_cmd(
     name: str,
     lane: str,
@@ -34,9 +33,8 @@ def create_cmd(
     purpose: str,
     first_proof: str,
     base_path: str,
-    mit: bool,
 ) -> None:
-    """Create a new compliant Mermicorn project."""
+    """Create a new compliant Mermicorn project (proprietary by default)."""
     target = Path(base_path).resolve() / name
     written = scaffold(
         target,
@@ -46,7 +44,6 @@ def create_cmd(
         visibility=visibility,
         purpose_problem=purpose,
         first_proof=first_proof,
-        with_mit=mit,
     )
     click.echo(f"Created {target}")
     click.echo(f"Wrote {len(written)} paths")
