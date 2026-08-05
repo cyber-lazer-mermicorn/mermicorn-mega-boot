@@ -1,6 +1,7 @@
 # Status
 
-**State:** FOUNDATION  
+**State:** BUILDING  
 **Last updated:** 2026-08-05
 
-Next: implement one-command scaffold and validation.
+Functional CLI, schema, templates, scaffold, validate, and tests landed.
+First proof target: successful `mermicorn-boot create` + `mermicorn-boot validate` cycle.
