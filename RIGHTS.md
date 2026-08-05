@@ -1,18 +1,13 @@
 # Rights
 
-## Ownership
-All original code, documentation, schemas, templates, designs, and commercial concepts in this repository and across the Mermicorn Grove are proprietary.
+**Controlling instrument:** [Mermicorn Grove LICENSE](https://github.com/cyber-lazer-mermicorn/mermicorn-grove/blob/main/LICENSE) (Proprietary License and Rights Reservation v1.0)
 
-**© Cherry | Cyber Lazer Mermicorn. All rights reserved.**
+**© 2026 Cherry | Cyber Lazer Mermicorn. All rights reserved.**
 
-## Collaboration
-Collaboration is welcome and open to discussion. Access, contribution, licensing exceptions, or shared work require explicit written agreement.
+Original works are proprietary. Public viewing is allowed for information and portfolio evaluation. No general license to copy, modify, distribute, or commercialize is granted except by separate written agreement signed by Cherry.
 
-## What this is not
-This is not an open-source license grant. No permission is given to copy, modify, distribute, or commercialize this work beyond ordinary viewing of public GitHub content unless a separate agreement says otherwise.
+Collaboration is open to discussion. Inquiries do not create rights.
 
-## Third parties
-Third-party names, trademarks, game properties, and libraries remain the property of their respective owners. Fan or reference material is unaffiliated unless stated.
+Legal anchors (summary): 17 U.S.C. § 106 exclusive rights; reservation of all rights not expressly granted; Hawaiʻi governing law; Honolulu First Circuit venue; mediation escalation; injunctive relief reserved.
 
-## AI-assisted material
-AI-assisted assets remain under Cherry’s direction and ownership unless otherwise contracted.
+Not legal advice. Have counsel review for high-stakes use.

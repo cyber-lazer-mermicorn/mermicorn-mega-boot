@@ -39,7 +39,7 @@ def scaffold(
         "quality.md": templates.quality(),
         "strategy.md": templates.strategy(),
         "RIGHTS.md": templates.rights(),
-        "LICENSE": templates.proprietary_license(),
+        "LICENSE": templates.proprietary_license_notice(),
         "mermicorn.repo.yaml": templates.repo_yaml(
             repo_id, display_name, lane, visibility, purpose_problem, first_proof
         ),
