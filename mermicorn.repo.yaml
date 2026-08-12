@@ -3,7 +3,7 @@ schema_version: "1.0"
 id: mermicorn-mega-boot
 display_name: Mermicorn Mega Boot
 owner: cherry
-lane: core
+lane: ai-core
 visibility: public
 status: foundation
 
